@@ -22,24 +22,27 @@ It provides a **structured, reproducible pipeline** for:
 
 ---
 
-## 🧩 Project Structure
+## 🧩 Project structure
 
+Below is the repository layout. Put datasets under `data/raw/` and expect processed JSONL splits to appear in `data/processed/`.
+
+```
 LLMEvalGraph/
 ├─ data/
-│ ├─ raw/ # put your dataset here
-│ └─ processed/ # generated dev/test JSONL splits
+│  ├─ raw/           # put your dataset here
+│  └─ processed/     # generated dev/test JSONL splits
 ├─ src/
-│ ├─ prep_dataset.py # convert your dataset to JSONL
-│ ├─ prompts.py # prompt templates
-│ ├─ runnables.py # LangChain model wrappers
-│ ├─ graph.py # LangGraph orchestration
-│ ├─ evaluators.py # metrics (accuracy, structure, etc.)
-│ ├─ run_eval.py # main runner
-│ └─ utils.py # helpers (IO, timing)
-├─ results/ # output JSONs with metrics
+│  ├─ prep_dataset.py  # convert your dataset to JSONL
+│  ├─ prompts.py       # prompt templates
+│  ├─ runnables.py     # LangChain model wrappers
+│  ├─ graph.py         # LangGraph orchestration
+│  ├─ evaluators.py    # metrics (accuracy, structure, etc.)
+│  ├─ run_eval.py      # main runner
+│  └─ utils.py         # helpers (IO, timing)
+├─ results/            # output JSONs with metrics
 ├─ requirements.txt
 ├─ Makefile
 └─ README.md
----
+```
 
 
