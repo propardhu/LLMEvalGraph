@@ -1,0 +1,6 @@
+| split | variant | model_id | count | accuracy | structure | citation_rate | latency_s_per_item |
+|---|---|---|---|---|---|---|---|
+| dev | mistral | mistral-7b | 200 | 0.455 | 1.000 | 0.000 | 1.190 |
+| dev | openai | gpt-4o-mini | 200 | 0.695 | 1.000 | 0.000 | 1.988 |
+| test | mistral | mistral-7b | 200 | 0.445 | 1.000 | 0.000 | 1.233 |
+| test | openai | gpt-4o-mini | 200 | 0.690 | 1.000 | 0.000 | 2.520 |
